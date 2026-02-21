@@ -42,12 +42,6 @@ if (isset($_POST['action'])) {
             }
         }
     }
-
-    if($_POST['action'] === 'reset'){
-        $_SESSION['nombre'] = '';
-        $_SESSION['milk'] = 0;
-        $_SESSION['softDrink'] = 0;
-    }
 }
 
 
@@ -73,7 +67,7 @@ if (isset($_POST['action'])) {
         <input name="number" type="number"><br>
         <button type="submit" name="action" value="add">add</button>
         <button type="submit" name="action" value="remove">remove</button>
-        <button type="submit" name="action" value="reset">reset</button>
+        <button type="reset" name="action" value="reset">reset</button>
         <br><br>
     </form>
     <h3>Iventory:</h3>
